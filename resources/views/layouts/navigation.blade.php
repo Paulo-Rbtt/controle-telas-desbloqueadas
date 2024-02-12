@@ -15,6 +15,14 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+
+                    <x-nav-link :href="route('event.create')" :active="request()->routeIs('event.create')">
+                        {{ __('Cadastrar Ocorrência') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('event.show')" :active="request()->routeIs('event.show')">
+                        {{ __('Listar Ocorrências') }}
+                    </x-nav-link>
                     
                     @if (Auth::user() && Auth::user()->role == "admin")
                     <x-nav-link :href="route('register')" :active="request()->routeIs('register')">
