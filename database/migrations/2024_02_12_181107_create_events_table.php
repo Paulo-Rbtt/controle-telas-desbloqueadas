@@ -14,9 +14,10 @@ return new class extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->id();
             $table->integer('user_id');
-            $table->text('imagem');
             $table->foreignId('emp_id')->constrained('users');
-            $table->softDeletes();
+            $table->text('imagem');
+            $table->tinyInteger('soda');
+            $table->tinyInteger('paid');
             $table->timestamps();
         });
     }
