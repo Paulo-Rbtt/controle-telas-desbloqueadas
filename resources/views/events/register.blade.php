@@ -23,7 +23,10 @@
                                 @endforeach
                             </select>
                         </div>
-                        <button type="submit" class="w-1/2 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Cadastrar Ocorrência</button>
+                        <!-- <button type="submit" class="w-1/2 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Cadastrar Ocorrência</button> -->
+                        <x-primary-button>
+                            {{ __('Cadastrar Ocorrência') }}
+                        </x-primary-button>
 
                         <input type="hidden" name="authUser" value="{{ Auth::user()->id }}">
                     </form>

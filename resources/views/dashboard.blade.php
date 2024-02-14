@@ -16,9 +16,9 @@
                             <tr>
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Colaborador</th>
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Total de Pizzas</th>
-                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Pizzas Pendentes</th>
-                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Total de Refrigerantes</th>
-                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Refrigerantes Pendentes</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Total de Refrig.</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">Pizzas Pendentes</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">Refrig. Pendentes</th>
                             </tr>
                         </thead>
                         <tbody class="bg-white divide-y divide-gray-200">
@@ -26,8 +26,8 @@
                             <tr>
                                 <td class="px-6 py-4 whitespace-nowrap font-bold">{{ $case->emp_name }}</td>
                                 <td class="px-6 py-4 whitespace-nowrap">{{ $case->events_qty }}</td>
-                                <td class="px-6 py-4 whitespace-nowrap">{{ $case->unpaid_events }}</td>
                                 <td class="px-6 py-4 whitespace-nowrap">{{ $case->soda_events }}</td>
+                                <td class="px-6 py-4 whitespace-nowrap">{{ $case->unpaid_events }}</td>
                                 <td class="px-6 py-4 whitespace-nowrap">{{ $case->unpaid_soda_events }}</td>
                             </tr>
                             @endforeach
